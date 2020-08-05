@@ -30,8 +30,8 @@
           $(".serchedCity").text("Weather for " + response.name);
 
           // gets current date and formats into mm/dd/yyy format
-          var fullDate = new Date(totalTimeZoneOffsetInSeconds).toLocaleDateString();
-
+          var fullDate = new Date().toLocaleDateString();
+          
           //displays date next to searched city
           $(".date").text(" as of " + fullDate);
 
@@ -59,24 +59,6 @@
           // displays wind speed
           $(".wind").text(": " + response.wind.speed + " mph");
 
-          // returns timezone offset difference in minutes for local time 
-          //it then converted in seconds and stores in variable
-          var currentTimeZoneInSeconds = new Date().getTimezoneOffset() * 60;
           
-          // Add the offset difference in seconds to current time zone (in seconds)and store it in variable
-          var totalTimeZoneOffsetInSeconds = response.timezone + currentTimeZoneInSeconds;
-          
-          var sunriseDateTime = new Date(response.sys.sunrise * 1000);
-          
-          //setUTSSeconds method sets time for the searched time zone time with given total calculated 
-          //offset time in seconds as a parameter
-          sunriseDateTime.setUTCSeconds(totalTimeZoneOffsetInSeconds);
-          
-          // time in seconds is converted into readable time format and displayed
-          $(".sunrise").text(": " + sunriseDateTime.toLocaleTimeString());
-
-          var sunsetDateTime = new Date(response.sys.sunset * 1000);
-          sunsetDateTime.setUTCSeconds(totalTimeZoneOffsetInSeconds);
-          $(".sunset").text(": " + sunsetDateTime.toLocaleTimeString());
         });
       })
