@@ -1,0 +1,16 @@
+.jumbotron{
+    text-align: center;
+    width:600px;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color:lightblue;
+}
+.weatherHead{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.serchedCity, .date{
+ font-size: 20px ;
+ color: darkblue;
+}
