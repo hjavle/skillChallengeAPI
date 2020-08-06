@@ -11,7 +11,7 @@
         var city = $("#weather-input").val();
         console.log(city);
         // Here we construct our URL
-        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + apiKey;
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + apiKey;
         console.log(queryURL);
         // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
         // and display it in the div with an id of movie-view
