@@ -11,83 +11,89 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-
+ 
 <div class="container-fluid">
-    <img class="img-responsive" src="./weatherapplogowhite.png" alt="" width="200" height="150">    
-  
-        <form id="weather-form" >
-            <!--  <label for="weather-input">Search for a weather</label> --> 
-                <input type="text" id="weather-input" placeholder="search city">
-                 
-                <input id="find-city" type="submit" value="Search">
-        </form>
-      
+    <div class="navbar">
+        <a class="active" href="#"></i> <img class="img-responsive" src="./weatherapplogowhite.png" alt="" width="180" height="100"> </a> 
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search </a> 
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+    
+    <form id="weather-form" >
+    <!--  <label for="weather-input">Search for a weather</label> --> 
+        <input type="text" id="weather-input" placeholder="search city">
+        <input id="find-city" type="submit" value="Search">
+    </form>     
 </div> 
 
-<div class="container data-container">
+<div class="table-responsive data-container" >
 <table class="table table-borderless">    
 <thead >
-        
+      <tr><span class= "serchedCity"></span></tr>  
 </thead>
- <tr>  
-    <th> <span class= "serchedCity"></span><span class="date"></span></th>
+<tr>  
+    <th><span class="date"></span></th>
     <th><span class= "date-one"></span</th>
     <th><span class= "date-two"></span</th>
     <th><span class= "date-three"></span</th>
     <th><span class= "date-four"></span</th>
-    <th><span class= "date-five"></span</th>        
-     </tr> 
+    <th><span class= "date-five"></span</th>      
+</tr> 
 <tr>
-          <td><span class= "temp"></span><span class="farn">&#8457</span></td>
-          <td class = "odd"><span class= "temp-day-one"></span><span class="farn">&#8457</span></td>
-          <td class = "even"><span class= "temp-day-two"></span><span class="farn">&#8457</span></td>
-          <td class = "odd"><span class= "temp-day-three"></span><span class="farn">&#8457</span></td>
-          <td class = "even"><span class= "temp-day-four"></span><span class="farn">&#8457</span></td>
-          <td class = "odd"><span class= "temp-day-five"></span><span class="farn">&#8457</span></td>
-    </tr>
-    <tr>
-        <td><span class= "tempFeelsLike"></span><span class="fefarn">&#8457</span><br><span class= "sky"></span>
-            <br><span class= "sunrise"></span><br><span class= "sunset"></span>
-            <br><span class= "wind"></span><br><span class= "humidity"></span>
-            <br><span class= "uv"></span></td>
+    <td><span class= "temp"></span><span class="farn">&#8457</span><span id="icon"><img id="wicon" src="" alt="Weather icon"></span></td>
+    <td class = "odd"><span class= "temp-day-one"></span><span class="farn">&#8457</span><span id="icon"><img id="wicon-day-1" src="" alt="Weather icon"></span></td>
+    <td class = "even"><span class= "temp-day-two"></span><span class="farn">&#8457</span><span id="icon"><img id="wicon-day-2" src="" alt="Weather icon"></span></td>
+    <td class = "odd"><span class= "temp-day-three"></span><span class="farn">&#8457</span><span id="icon"><img id="wicon-day-3" src="" alt="Weather icon"></span></td>
+    <td class = "even"><span class= "temp-day-four"></span><span class="farn">&#8457</span><span id="icon"><img id="wicon-day-4" src="" alt="Weather icon"></span></td>
+    <td class = "odd"><span class= "temp-day-five"></span><span class="farn">&#8457</span><span id="icon"><img id="wicon-day-5" src="" alt="Weather icon"></span></td>
+</tr>
+<tr>
+    <td><span class= "tempFeelsLike"></span><span class="fefarn">&#8457</span><br><span class= "sky"></span>
+    <br><span class= "sunrise"></span><br><span class= "sunset"></span> <br><span class= "wind"></span><br><span class= "humidity"></span>
+    <br><span class= "uv"></span></td>
 
-        <td><span class= "tempFeelsLike-day-1"></span><span class="fefarn">&#8457</span><br><span class= "sky-day-1"></span>
-            <br><span class= "sunrise-day-1"></span><br><span class= "sunset-day-1"></span>
-            <br><span class= "wind-day-1"></span><br><span class= "humidity-day-1"></span>
-            <br><span class= "uv-day-1"></span></td>
+    <td><span class= "tempFeelsLike-day-1"></span><span class="fefarn">&#8457</span><br><span class= "sky-day-1"></span>
+    <br><span class= "sunrise-day-1"></span><br><span class= "sunset-day-1"></span>
+    <br><span class= "wind-day-1"></span><br><span class= "humidity-day-1"></span>
+    <br><span class= "uv-day-1"></span></td>
 
-        <td><span class= "tempFeelsLike-day-2"></span><span class="fefarn">&#8457</span><br><span class= "sky"></span>
-            <br><span class= "sunrise-day-2"></span><br><span class= "sunset-day-2"></span>
-            <br><span class= "wind-day-2"></span><br><span class= "humidity-day-2"></span>
-            <br><span class= "uv-day-2"></span></td>
+    <td><span class= "tempFeelsLike-day-2"></span><span class="fefarn">&#8457</span><br><span class= "sky-day-2"></span>
+    <br><span class= "sunrise-day-2"></span><br><span class= "sunset-day-2"></span>
+    <br><span class= "wind-day-2"></span><br><span class= "humidity-day-2"></span>
+    <br><span class= "uv-day-2"></span></td>
 
-        <td><span class= "tempFeelsLike-day-3"></span><span class="fefarn">&#8457</span><br><span class= "sky"></span>
-            <br><span class= "sunrise-day-3"></span><br><span class= "sunset-day-3"></span>
-            <br><span class= "wind-day-3"></span><br><span class= "humidity-day-3"></span>
-            <br><span class= "uv-day-3"></span></td>
+    <td><span class= "tempFeelsLike-day-3"></span><span class="fefarn">&#8457</span><br><span class= "sky-day-3"></span>
+    <br><span class= "sunrise-day-3"></span><br><span class= "sunset-day-3"></span>
+    <br><span class= "wind-day-3"></span><br><span class= "humidity-day-3"></span>
+    <br><span class= "uv-day-3"></span></td>
         
-        <td><span class= "tempFeelsLike-day-4"></span><span class="fefarn">&#8457</span><br><span class= "sky"></span>
-            <br><span class= "sunrise-day-4"></span><br><span class= "sunset-day-4"></span>
-            <br><span class= "wind-day-4"></span><br><span class= "humidity-day-4"></span>
-            <br><span class= "uv-day-4"></span></td>
+    <td><span class= "tempFeelsLike-day-4"></span><span class="fefarn">&#8457</span><br><span class= "sky-day-4"></span> 
+    <br><span class= "sunrise-day-4"></span><br><span class= "sunset-day-4"></span>
+    <br><span class= "wind-day-4"></span><br><span class= "humidity-day-4"></span>
+    <br><span class= "uv-day-4"></span></td>
 
-        <td><span class= "tempFeelsLike-day-5"></span><span class="fefarn">&#8457</span><br><span class= "sky"></span>
-            <br><span class= "sunrise-day-5"></span><br><span class= "sunset-day-5"></span>
-            <br><span class= "wind-day-5"></span><br><span class= "humidity-day-5"></span>
-            <br><span class= "uv-day-5"></span></td>
+    <td><span class= "tempFeelsLike-day-5"></span><span class="fefarn">&#8457</span><br><span class= "sky-day-5"></span>
+    <br><span class= "sunrise-day-5"></span><br><span class= "sunset-day-5"></span>
+    <br><span class= "wind-day-5"></span><br><span class= "humidity-day-5"></span>
+    <br><span class= "uv-day-5"></span></td>
 
-  </tr>
-        
-        
-      </tbody>
-      </div>
-    </table>
- 
+</tr>
+</tbody>
+
+</table>
+
 </div> 
+</div>
 
+<footer class="container-fluid text-center">
+    <a class ="social" href="#"><i class="fa fa-fw fa-facebook"></i> </a> 
+    <a class ="social" href="#"><i class="fa fa-fw fa-instagram"></i></a> 
+    <a class ="social" href="#"><i class="fa fa-fw fa-twitter"></i></a>
+    <p>copywrite @ 2020 WeatherApp.com</p>
+  </footer>
+  
 </body>
-
-   
  
 
 <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
