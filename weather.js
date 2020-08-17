@@ -5,6 +5,7 @@
       var totalTimeZoneOffsetInSeconds="";
       $('.farn').hide();
       $('.fefarn').hide();
+      $('.data-container').hide();
       $("#find-city").on("click", function(event) {
         let apiKey = '&appid=9a7029fbfe4996b5ec005452b631a685';
         console.log(apiKey);
@@ -20,6 +21,7 @@
         }).then(function(response) {
           // dumps all the data in weather-view text area
           $("#weather-view").text(JSON.stringify(response));
+          $('.data-container').show();
           console.log(response);
           // displays searched city
           $(".serchedCity").text(response.name + " Weather Forecast" );

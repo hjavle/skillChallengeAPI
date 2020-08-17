@@ -31,7 +31,7 @@
 * Add a `gif` to showcase your work.
 ---
 ### App
-![Weather App](./weather.gif)
+![Weather App](./WeatherApp.png)
 
 
 ## ❤ **_Happy Coding_** ❤
