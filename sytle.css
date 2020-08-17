@@ -1,16 +1,110 @@
-.jumbotron{
-    text-align: center;
-    width:600px;
-    margin-left: 450px;
-    margin-right: 450px;
-    background-color:lightblue;
-}
-.weatherHead{
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+
+html,
+body,
+
+
+body {
+   
+  font-family: sans-serif; 
 }
 
-.serchedCity, .date{
- font-size: 20px ;
- color: darkblue;
+.jumbotron{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 0em;
+    padding-bottom: 5px;
+    width:600;
+    height:200;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+.col-md-4{
+   
+    text-align: center;
+    padding:0;
+}
+.weatherHead{
+    margin-top: 150px;
+    margin-bottom: 50px;
+   
+   
+}
+.weather{
+    display:inline-block;
+}
+.weatherDataDisplay {
+    width: 400px;
+    color:white;
+    display:inline-block;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+}
+.serchedCity{
+    font-size: 30px;
+    color: white;
+}
+ .date{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.searchUVIndex .uv{
+    padding: 2px;
+    border-radius: 4px;
+    color: white;
+}
+.fiveDayForecast {
+ font-size: 20px;
+}
+.card{
+    margin-top:10px;
+    margin-bottom: 10px;
+    width:200px;
+    height:300px
+    
+}
+
+.dayCards .card{ 
+    margin-top:20px;
+    margin-bottom: 10px;
+    background-color:rgb(4, 93, 235);
+    width:200px;
+    height:300px;
+    color:white;
+
+}
+.sunrise, .sunset{
+font: bold;
+color: white;
+}
+.temp{
+    text-align: left;
+    color:white;
+    font-weight: 300px;
+    font-size: 5vw;
+    line-height: 100%;
+} 
+.tempFeelsLike, .fefarn{
+    color:white;
+    font-weight: 50px;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 20%;
+} 
+.farn{
+    color:white;
+    font-weight: 300px;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 100%;
+}
+        
+.sky,.humidity,.wind,.uv{
+    font: bold;
+    color:white;
 }

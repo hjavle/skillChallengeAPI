@@ -1,0 +1,113 @@
+
+body {
+  background-color: lightblue;
+  height: 900px;
+  background: linear-gradient(to bottom,  lightblue 10%,white 100%) 
+}
+
+
+ 
+.container-fluid {
+    text-align: center;
+    background-color:rgb(4, 4, 158);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+
+#weather-input{
+  width: 20%;
+  padding:0;
+  margin: 0;;
+  overflow: hidden;
+   
+}
+#find-city{
+  
+  width: 10%;
+  padding:0;
+  margin: 0;;
+ overflow: hidden;
+  
+}
+  
+
+ 
+  
+  .searchBox {
+    border: 0;
+    padding: 0.5rem;
+    grid-column:2/4;
+    grid-row:1;
+    outline:none;
+  }
+  
+  .searchButton {
+    background: black;
+    border: 0;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0;
+    grid-column:4/5;
+    grid-row:1;
+  }
+
+.data-container{
+    
+    margin-top: 50px;   
+    text-align: center;
+}
+ thead > tr{
+  background: black;
+}
+tbody>tr>:nth-child(1){
+    background: black;
+    color:white;
+    width:200px;
+    text-align:center;
+   }
+tbody>tr>:nth-child(2){
+    background:blue;
+    color:white;
+    width:200px;
+    text-align:center;
+   }
+   tbody>tr>:nth-child(3){
+    background:rgb(2, 2, 107);
+    color:white;
+    width:200px;
+    text-align:center;
+   }
+tbody>tr>:nth-child(4){
+    background: darkgray;
+    color:white;
+    width:200px;
+    text-align:center;
+   }
+   tbody>tr>:nth-child(5){
+    background:black;
+    color:white;
+    width:200px;
+    text-align:center;
+   }
+   tbody>tr>:nth-child(6){
+    background:gray;
+    color:white;
+    width:200px;
+    text-align:center;
+   }
+   table > tbody > tr:nth-child(2){
+    background:black;
+    color:white;
+    width:100px;
+    font-size: 50px;
+    text-align:center;
+   }
+   
+
+
+
+
+
+
