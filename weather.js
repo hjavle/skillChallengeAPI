@@ -20,7 +20,7 @@
           $('.data-container').show();
           console.log(response);
           $(".serchedCity").text(response.name + " Weather Forecast" );
-          var fullDateDay = moment().format('dddd, MMMM Do');
+          var fullDateDay = new Date().toDateString();
           $(".date").text( " Today "+ fullDateDay);
           var tempF = (response.main.temp - 273.15) * 1.80 + 32;
           $(".temp").text( tempF.toFixed(2));
