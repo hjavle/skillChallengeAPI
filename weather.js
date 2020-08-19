@@ -27,7 +27,7 @@
           var feelsLikeTempF = (response.main.feels_like - 273.15) * 1.80 + 32;
           $(".tempFeelsLike").text("Feels: " + feelsLikeTempF.toFixed(2));
           var iconcode = response.weather[0].icon;
-          var iconurl = "http://openweathermap.org/img/wn/" + iconcode + ".png";
+          var iconurl = "https://openweathermap.org/img/wn/" + iconcode + ".png";
           $('#wicon').attr('src', iconurl);
           $(".sky").text(response.weather[0].description);
           $(".humidity").text("Humidity: " + response.main.humidity +"%");
@@ -49,7 +49,7 @@
   
       function calcUVIndex(cordslat,cordslon){
 
-        var queryURL =`http://api.openweathermap.org/data/2.5/uvi?appid=4e1d3f7a2819df21862189cf606302c7&lat=${cordslat}&lon=${cordslon}`;
+        var queryURL =`https://api.openweathermap.org/data/2.5/uvi?appid=4e1d3f7a2819df21862189cf606302c7&lat=${cordslat}&lon=${cordslon}`;
     
         $.ajax({
             url: queryURL,
@@ -95,7 +95,7 @@
                 $(".temp-day-one").text(temp.toFixed(2));
                 $(".tempFeelsLike-day-1").text("Feels: " + tempFeeels.toFixed(2));
                 var iconcodeDayOne = response.daily[0].weather[0].icon;
-                var iconurlDayOne = "http://openweathermap.org/img/w/" + iconcodeDayOne + ".png";
+                var iconurlDayOne = "https://openweathermap.org/img/w/" + iconcodeDayOne + ".png";
                 $('#wicon-day-1').attr('src', iconurlDayOne);
                 $(".sky-day-1").text(response.daily[0].weather[0].description);
                 $(".sunrise-day-1").text("Sunrise: " + sunriseDateTime.toLocaleTimeString());
@@ -124,7 +124,7 @@
                 $(".temp-day-two").text(temp.toFixed(2));
                 $(".tempFeelsLike-day-2").text("Feels: " + tempFeeels.toFixed(2));
                 var iconcodeDayTwo = response.daily[1].weather[0].icon;
-                var iconurlDayTwo = "http://openweathermap.org/img/w/" + iconcodeDayTwo + ".png";
+                var iconurlDayTwo = "https://openweathermap.org/img/w/" + iconcodeDayTwo + ".png";
                 $('#wicon-day-2').attr('src', iconurlDayTwo);
                 $(".sky-day-2").text(response.daily[1].weather[0].description);
                 $(".sunrise-day-2").text("Sunrise: " + sunriseDateTimeOne.toLocaleTimeString());
@@ -153,7 +153,7 @@
                 $(".temp-day-three").text(temp.toFixed(2));
                 $(".tempFeelsLike-day-3").text("Feels: " + tempFeeels.toFixed(2));
                 var iconcodeDayThree = response.daily[2].weather[0].icon;
-                var iconurlDayThree = "http://openweathermap.org/img/w/" + iconcodeDayThree + ".png";
+                var iconurlDayThree = "https://openweathermap.org/img/w/" + iconcodeDayThree + ".png";
                 $('#wicon-day-3').attr('src', iconurlDayThree);
                 $(".sky-day-3").text(response.daily[2].weather[0].description);
                 $(".sunrise-day-3").text("Sunrise: " + sunriseDateTime.toLocaleTimeString());
@@ -182,7 +182,7 @@
                   $(".temp-day-four").text(temp.toFixed(2));
                   $(".tempFeelsLike-day-4").text("Feels: " + tempFeeels.toFixed(2));
                   var iconcode = response.daily[3].weather[0].icon;
-                  var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+                  var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
                   $('#wicon-day-4').attr('src', iconurl);
                   $(".sky-day-4").text(response.daily[3].weather[0].description);
                   $(".sunrise-day-4").text("Sunrise: " + sunriseDateTime.toLocaleTimeString());
@@ -211,7 +211,7 @@
                     $(".temp-day-five").text(temp.toFixed(2));
                     $(".tempFeelsLike-day-5").text("Feels: " + tempFeeels.toFixed(2));
                     var iconcodeDayFive = response.daily[4].weather[0].icon;
-                    var iconurlDayFive = "http://openweathermap.org/img/w/" + iconcodeDayFive + ".png";
+                    var iconurlDayFive = "https://openweathermap.org/img/w/" + iconcodeDayFive + ".png";
                     $('#wicon-day-5').attr('src', iconurlDayFive);  
                     $(".sky-day-5").text(response.daily[4].weather[0].description);
                     $(".sunrise-day-5").text("Sunrise: " + sunriseDateTime.toLocaleTimeString());
