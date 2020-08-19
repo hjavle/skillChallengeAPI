@@ -5,15 +5,12 @@ body {
   background: linear-gradient(to bottom,  lightblue 10%,white 100%) 
 }
 
-
- 
 .container-fluid {
     text-align: center;
     background-color:rgb(4, 4, 158);
     color: white;
     padding-top: 10px;
-    padding-bottom: 10px;
-   
+    padding-bottom: 10px;   
 }
 
 #weather-input{
@@ -23,8 +20,7 @@ body {
   overflow: hidden;
    
 }
-#find-city{
-  
+#find-city{ 
   width: 10%;
   padding:0;
   margin: 0;;
@@ -118,6 +114,12 @@ tbody>tr>:nth-child(5){
   .social{
     color: white;
     font-size:30px;
+  }
+  .multi-weather{
+    float:center;
+    
+    margin-top: 60px;   
+    text-align: center;
   }
   
   @media screen and (max-width: 500px) {

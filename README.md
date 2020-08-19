@@ -31,8 +31,8 @@
 * Add a `gif` to showcase your work.
 ---
 ### App
-![Weather App](./WeatherApp.png)
+![Weather App](./assets/WeatherApp.png)
 
 
 ## ❤ **_Happy Coding_** ❤
-![](images/images/TechBridgeLogo.png)
+![](./assets/TechBridgeLogo.png)

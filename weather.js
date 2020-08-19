@@ -1,11 +1,9 @@
 
-      // This .on("click") function will trigger the AJAX Call
       var currentTimeZoneInSeconds="";
-      var totalTimeZoneOffsetInSeconds="";
-      $('.farn').hide();
-      $('.fefarn').hide();
-      $('.data-container').hide();
+      var totalTimeZoneOffsetInSeconds="";    
+      $('.data-container').hide();        
       $("#find-city").on("click", function(event) {
+        $('.multi-weather').hide();
         let apiKey = '&appid=9a7029fbfe4996b5ec005452b631a685';
         console.log(apiKey);
         event.preventDefault();
@@ -18,11 +16,9 @@
           url: queryURL,
           method: "GET"
         }).then(function(response) {
-          // dumps all the data in weather-view text area
           $("#weather-view").text(JSON.stringify(response));
           $('.data-container').show();
           console.log(response);
-          // displays searched city
           $(".serchedCity").text(response.name + " Weather Forecast" );
           var fullDateDay = moment().format('dddd, MMMM Do');
           $(".date").text( " Today "+ fullDateDay);
@@ -30,8 +26,6 @@
           $(".temp").text( tempF.toFixed(2));
           var feelsLikeTempF = (response.main.feels_like - 273.15) * 1.80 + 32;
           $(".tempFeelsLike").text("Feels: " + feelsLikeTempF.toFixed(2));
-          $('.farn').show();
-          $('.fefarn').show();
           var iconcode = response.weather[0].icon;
           var iconurl = "http://openweathermap.org/img/wn/" + iconcode + ".png";
           $('#wicon').attr('src', iconurl);
