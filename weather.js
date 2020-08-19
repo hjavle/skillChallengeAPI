@@ -10,8 +10,7 @@
         var city = $("#weather-input").val();
         console.log(city);
         var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + apiKey;
-        console.log(queryURL);
-    
+        console.log(queryURL);    
         $.ajax({
           url: queryURL,
           method: "GET"
@@ -48,14 +47,11 @@
       })
   
       function calcUVIndex(cordslat,cordslon){
-
-        var queryURL =`https://api.openweathermap.org/data/2.5/uvi?appid=4e1d3f7a2819df21862189cf606302c7&lat=${cordslat}&lon=${cordslon}`;
-    
+        var queryURL =`https://api.openweathermap.org/data/2.5/uvi?appid=4e1d3f7a2819df21862189cf606302c7&lat=${cordslat}&lon=${cordslon}`;   
         $.ajax({
             url: queryURL,
             method: "GET"
-        }).then(function(response){
-    
+        }).then(function(response){    
             console.log(response);
             var currentDayUV = response.value;
             var searchUVIndex = $('.uv');
@@ -72,10 +68,8 @@
         });    
     }
     
-    function show5DayForecast(cordslat,cordslon){
-    
+    function show5DayForecast(cordslat,cordslon){    
         var queryURL =`https://api.openweathermap.org/data/2.5/onecall?appid=4e1d3f7a2819df21862189cf606302c7&lat=${cordslat}&lon=${cordslon}`
-
         $.ajax({
             url: queryURL,
             method: 'GET'
@@ -192,7 +186,7 @@
                   var dailyuvindex =response.daily[3].uvi
                   if(dailyuvindex< 4){
                       $(".uv-day-4").text("UV Index: " + response.daily[3].uvi);
-                      $(".uv-day-4").css("background-color", "green");                   
+                      $(".uv-day-4").css("background-color", "green");                  
                     }else if(dailyuvindex > 4 && dailyuvindex < 7){
                       $(".uv-day-4").text("UV Index: " + response.daily[3].uvi);
                       $(".uv-day-4").css("background-color", "yellow");                       
