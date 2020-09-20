@@ -1,6 +1,6 @@
 
       var currentTimeZoneInSeconds="";
-      var totalTimeZoneOffsetInSeconds="";    
+      var totalTimeZoneOffsetInSeconds=""; 
       $('.data-container').hide();        
       $("#find-city").on("click", function(event) {
         $('.multi-weather').hide();

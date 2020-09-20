@@ -1,10 +1,11 @@
-# API Skill Challenge 
+#  Weather App
 
-## Skill Challenge Description 
-* Create a weather app using an API from [Open Weather Map](https://openweathermap.org/guide#how)
+##  Description 
+* Create a Weather app using an API from [Open Weather Map](https://openweathermap.org/guide#how)
+
 
 ## User Story 
-    As a student I want to create a weather app that accepts user input for the city.
+    This Weather app that accepts user input for the city.
     Displays weather for the city user has typed in.
     
 ## Acceptance Criteria 
@@ -15,24 +16,13 @@
 **_Then_** As user selects city weather information is displayed.
 
 ---
-## Remember TechBridge TECH Goals
-
-**_T_** : Time management skills will provide a positive guide for you.
-
-**_E_** : Effort is an important part of the success of the course.
-    
-**_C_** : Communication regularly with the instructor and other students is imperative.
-    
-**_H_** :  Homework, assignments and quizzes should be submitted by deadlines.
-
----
 ### Bonus 
 * Add additional sunrise and sunset timings to app.
-* Add a `gif` to showcase your work.
----
+
 ### App
-![Weather App](./assets/WeatherApp.png)
+![Weather App](./assets/weatherApp.gif)
 
-
+### 
+Click [here](https://hjavle.github.io/skillChallengeAPI/) to check out Weather App
 ## ❤ **_Happy Coding_** ❤
 ![](./assets/TechBridgeLogo.png)
