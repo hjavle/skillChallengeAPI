@@ -1,4 +1,5 @@
 #  Weather App
+<img src="https://img.shields.io/badge/html-26.7.2%25-green"> <img src= "https://img.shields.io/badge/css-14.9%25-green"> <img src= "https://img.shields.io/badge/JavaScript-58.4.5%25-green"> <br/>
 
 ##  Description 
 * Create a Weather app using an API from [Open Weather Map](https://openweathermap.org/guide#how)
